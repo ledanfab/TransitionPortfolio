@@ -7,6 +7,21 @@
     android:background="@drawable/androidtd"
     tools:context=".MainActivity">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:id="@+id/lottie"
+        android:layout_height="324dp"
+        android:layout_alignParentStart="true"
+        app:lottie_rawRes="@raw/tdanimation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp" />
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/slideViewpager"
         android:layout_width="match_parent"
@@ -16,14 +31,6 @@
         android:layout_marginBottom="0dp">
 
     </androidx.viewpager.widget.ViewPager>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="384dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="32dp"
-        app:srcCompat="@drawable/tdlogo" />
 
     <TextView
         android:id="@+id/tvSkip"
